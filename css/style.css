@@ -1,0 +1,128 @@
+.homepage {
+   font-family: "Roboto", Arial, sans-serif; /* UofM Brand font */
+   color: #1e1e1e; /* Darker text color for better readability */
+   background-color: lightgray; /* Light gray background for better contrast */
+}
+
+.skip {
+   color: white;
+   text-align:left;
+   position: absolute;
+   top: -40px;
+}
+
+.skip:focus {
+   position: absolute;
+   top: 20px;
+}
+
+/*Header*/
+.homepageheader {
+   background-color: #00274c; 
+   color: #fff;
+   padding: 20px;
+ 
+   text-align: center;
+}
+
+.homepageheader img {
+   width: 120px;
+   display: block;
+   margin: auto; 
+}
+
+.homepageheader h1 {
+   margin-top: 20px;
+   font-size: 2rem; /* Header font size */
+   font-weight: bold;
+}
+
+/* Navigation styling */
+.homepagenav ul {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 40px;
+   justify-items: center;
+   align-self: center;
+   justify-self: center;
+}
+
+.homepagenav a {
+   color: #1e1e1e;
+   justify-self: center;
+   align-self: center;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase; /* Consistent with UofM style */
+}
+
+.homepagenav li {
+   background-color: #f0f0f0;
+   margin: 10px 0;
+   padding: 10px;
+}
+
+/* Main Content Layout */
+.homepagemain {
+   display: grid;
+   grid-template-columns: 1fr 1fr; /* Two-column layout */
+   text-align: center;
+   gap: 20px;
+   padding: 20px;
+   margin: auto; /* Center the main content */
+   align-items: start; /* Align items to the top of the section */
+}
+
+/* Section Styling */
+.homepagesection {
+   background-color: #fff;
+   padding: 20px;
+   border: 4px solid #ffcb05; /* UofM Gold accent */
+}
+
+.homepagesection h2 {
+   color: #00274c; /* UofM Blue */
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.homepagesection h3 {
+   color: #00274c;
+   font-size: 1.3rem; /* Smaller header for articles */
+   margin-bottom: 10px;
+}
+
+.homepagesection p,
+.homepagesection li {
+   margin-bottom: 10px;
+}
+
+
+/* Figure and Image Styling */
+
+
+.homepageimage img {
+   margin-bottom: 10px;
+   margin-top: 10px;
+   width: 80%;
+}
+
+.homepagecaption {
+   font-size: .9rem;
+   color: gray;
+   margin-bottom: 10px;
+}
+
+
+
+/* Footer Styling */
+.homepagefooter {
+   background-color: #00274c; /* UofM Blue */
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+}
+
+.homepagefooter a {
+   color: white;
+}
