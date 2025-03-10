@@ -1,9 +1,11 @@
-.homepage {
-   font-family: "Roboto", Arial, sans-serif; /* UofM Brand font */
-   color: #1e1e1e; /* Darker text color for better readability */
-   background-color: lightgray; /* Light gray background for better contrast */
+/*Overall style*/
+.pagestyle {
+   font-family: "Roboto", Arial, sans-serif; 
+   color: black; 
+   background-color: lightgray; 
 }
 
+/*Skip to Main*/
 .skip {
    color: white;
    text-align:left;
@@ -14,31 +16,31 @@
 .skip:focus {
    position: absolute;
    top: 20px;
+   right: 80%;
 }
 
 /*Header*/
-.homepageheader {
+.header {
    background-color: #00274c; 
-   color: #fff;
+   color: white;
    padding: 20px;
- 
    text-align: center;
 }
 
-.homepageheader img {
-   width: 120px;
-   display: block;
+.header img {
+   width: 30%;
    margin: auto; 
+   margin-bottom: 20px;
 }
 
-.homepageheader h1 {
+.header h1 {
    margin-top: 20px;
-   font-size: 2rem; /* Header font size */
+   font-size: 2rem; 
    font-weight: bold;
 }
 
-/* Navigation styling */
-.homepagenav ul {
+/*Navigation*/
+.navigation ul {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 40px;
@@ -47,82 +49,92 @@
    justify-self: center;
 }
 
-.homepagenav a {
-   color: #1e1e1e;
-   justify-self: center;
-   align-self: center;
+.navigation a {
+   color: black;
+   padding: 5px;
+   align-items: center;
    text-decoration: none;
    font-weight: bold;
-   text-transform: uppercase; /* Consistent with UofM style */
+   text-transform: uppercase; 
 }
 
-.homepagenav li {
+.navigation li {
    background-color: #f0f0f0;
-   margin: 10px 0;
+   margin: 10px 0 10px 0;
    padding: 10px;
+   border-radius: 8px;
 }
 
-/* Main Content Layout */
-.homepagemain {
+/* Main Content Grid*/
+.maincontent {
    display: grid;
-   grid-template-columns: 1fr 1fr; /* Two-column layout */
+   grid-template-columns: 1fr 1fr; 
    text-align: center;
    gap: 20px;
    padding: 20px;
-   margin: auto; /* Center the main content */
-   align-items: start; /* Align items to the top of the section */
+   margin: auto; 
+   align-items: start; 
 }
 
-/* Section Styling */
-.homepagesection {
-   background-color: #fff;
+/*Section*/
+.section {
+   background-color: white;
    padding: 20px;
-   border: 4px solid #ffcb05; /* UofM Gold accent */
+   border: 4px solid #ffcb05; 
 }
 
-.homepagesection h2 {
-   color: #00274c; /* UofM Blue */
+.section h2 {
+   color: #00274c; 
    font-size: 1.5rem;
    margin-bottom: 10px;
 }
 
-.homepagesection h3 {
+.section h3 {
    color: #00274c;
-   font-size: 1.3rem; /* Smaller header for articles */
+   font-size: 1.3rem; 
    margin-bottom: 10px;
 }
 
-.homepagesection p,
-.homepagesection li {
+.section p,
+.section li {
    margin-bottom: 10px;
 }
 
-
-/* Figure and Image Styling */
-
-
-.homepageimage img {
+/*Images*/
+.contentimage img {
    margin-bottom: 10px;
    margin-top: 10px;
    width: 80%;
 }
 
-.homepagecaption {
+.caption {
    font-size: .9rem;
-   color: gray;
+   color: #5f5c5b;
    margin-bottom: 10px;
 }
 
-
-
-/* Footer Styling */
-.homepagefooter {
-   background-color: #00274c; /* UofM Blue */
+/*Footer*/
+.footer {
+   background-color: #00274c; 
    color: #fff;
    padding: 20px;
    text-align: center;
 }
 
-.homepagefooter a {
+.footer a {
    color: white;
+}
+
+/*Miscellaneous*/
+.advisingsection {
+   grid-column: 1/-1;
+}
+
+.otherresourcesintro {
+   grid-column: 1/-1;
+}
+
+.active {
+   background-color: #4CAF50;
+   color: white
 }
