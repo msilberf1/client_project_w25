@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>404</title>
+</head>
+
+<body>
+    <header>
+        <nav class = "navigation404">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "academic_support.html">Academic Support</a></li>
+                <li><a href = "mental_health_support.html">Mental Health Support</a></li>
+                <li><a href = "other_resources.html">Other Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="images/ErrorRobot.webp" class = "robotlogo" alt = "Error Robot">
+        <section class="text404">
+            <p>Sorry, we couldn't find what you are looking for.</p>
+            <br>
+            <a href = "index.html">
+                <button class="button">
+                <p>Return to Homepage</p>
+                </button>
+            </a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <br>
+        <p>© Copyrights <span id="year"></span> by Matthew Silberfein. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</html>

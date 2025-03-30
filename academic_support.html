@@ -24,11 +24,11 @@
 
     </header>
     <main class="maincontent" id="main">
-        <section class="section">
+        <section class="section section_academic_support">
             <p>At the University of Michigan School of Information (UMSI), we are committed to supporting our students' academic success by offering a wide array of resources and services. Our academic advising team provides personalized guidance to help you navigate your curriculum, select courses, and address any academic challenges or questions you may encounter during your studies. UMSI students also have access to the extensive collections and study spaces within the University Library system, offering both digital and physical resources essential for research and coursework. Additionally, our specialized tutoring services and the UMSI Writing Center are available to support you in mastering complex subjects and enhancing your written communication skills. By utilizing these academic resources, UMSI students can thrive in their studies and achieve their educational goals. </p>
 
         </section>
-        <section class="section">
+        <section class="section section_academic_support">
             <h2>Study Spaces</h2>
             <p>Finding a good place to study is paramount to success. There are many <a href = "https://studyspaces.umich.edu/">Study Spaces</a> available on campus, whether you are on Central Campus, North Campus or somewhere else entirely. Some spaces are designated as open, and no reservations are needed to study there.</p>
             <h3>The Michigan Union</h3>
@@ -52,8 +52,12 @@
     </main>
     <footer class="footer">
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <br>
+        <p>© Copyrights <span id="year"></span> by Matthew Silberfein. All rights reserved.</p>
     </footer>
     
 </body>
-
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </html>

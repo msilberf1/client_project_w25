@@ -23,7 +23,7 @@
         <h1>Mental Health Resources</h1>
 
     </header>
-    <main class="maincontent" id="main">
+    <main class="maincontent mental_maincontent" id="main">
         <section class="section">
             <h2>CAPS</h2>
             <p>At the University of Michigan, we are committed to helping students maintain their mental health. One of our greatest resources is <a href = "https://caps.umich.edu/">CAPS</a>. CAPS supports the health and well-being of the campus community. We are inspired to help students realize their potential, cope with the stresses of life, work productively, and connect meaningfully with others. </p>
@@ -53,8 +53,12 @@
 
     <footer class="footer">
         <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <br>
+        <p>© Copyrights <span id="year"></span> by Matthew Silberfein. All rights reserved.</p>
     </footer>
     
 </body>
-
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </html>

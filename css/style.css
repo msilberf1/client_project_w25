@@ -138,3 +138,156 @@
    background-color: #4CAF50;
    color: white
 }
+
+.top404 {
+   margin: 1rem 0;
+   font-size: 3rem;
+   text-align: center;
+   color:#fff;
+   background-color: #00274c;
+}
+
+.robotlogo {
+   display: block;
+   width: 50%;
+   margin: auto;
+}
+
+.navigation404 ul {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 40px;
+   justify-items: center;
+   align-self: center;
+   justify-self: center;
+   width: 100%;
+   font-size: 1rem;
+   text-align: center;
+   color:#fff;
+   background-color: #00274c;
+
+}
+
+.navigation404 li {
+   background-color: #f0f0f0;
+   margin: 10px 0 10px 0;
+   padding: 10px;
+   border-radius: 8px;
+}
+
+.text404 {
+   margin-bottom: 3rem;
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+.button {
+   font-size: 1.5rem;
+   color:#00274c
+}
+
+
+
+@media screen and (min-width: 1000px) {
+   /* Main Content Grid: Adjust layout for larger screens */
+   .maincontent {
+       grid-template-columns: 1fr 1fr 1fr;  /* 3 columns instead of 2 */
+       gap: 30px;  /* Increase gap between columns */
+       padding: 40px; /* Add more padding */
+       align-items: center;
+   }
+
+   /* Section */
+   .section {
+      padding: 30px;
+  }
+
+   /* Adjust header and navigation for larger screens */
+   .header img {
+       width: 20%; /* Decrease the logo size */
+   }
+
+   .header h1 {
+       font-size: 2.5rem; /* Increase header font size */
+   }
+
+   .navigation ul {
+       grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns for larger screens */
+   }
+
+   .bottom_index {
+      grid-column: 1/-1;
+   }
+
+   .section_academic_support {
+      grid-column: 1/-1;
+   }
+
+   .mental_maincontent {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .other_resources_maincontent {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   /* Footer: Adjust the layout */
+   .footer {
+       padding: 30px;
+   }
+
+   /* Adjust font size and layout of the text for larger screens */
+   .section h2 {
+      font-size: 2.5rem;
+  }
+
+  .section h3 {
+      font-size: 1.7rem;
+  }
+
+  .section p, .section li {
+      font-size: 1.7rem;
+  }
+
+  .navigation a {
+   font-size: 1.2rem;
+  }
+
+
+  
+@keyframes activeAnimationNavigation {
+   0% {
+      background-color: white;  /* Active background color */
+   }
+   100% {
+      background-color: #4CAF50;  /* Active background color */
+   }
+}
+
+@keyframes logoAnimation {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+/* Active Class */
+.active {
+   background-color: #4CAF50;
+   color: white;
+   animation: activeAnimationNavigation 1s ease-out; /* Apply the animation */
+}
+
+.header img {
+   animation: logoAnimation 2s ease-in;
+}
+
+}
+
+@media (prefers-reduced-motion) {
+   .active, .header img {
+     animation: none;
+   }
+ }
