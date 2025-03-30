@@ -186,7 +186,11 @@
    border-radius: 8px;
 }
 
-.text404 {
+.text404 h1 {
+   animation: none;
+}
+
+.text404{
    margin-bottom: 3rem;
    text-align: center;
    font-size: 1.2rem;
@@ -294,3 +298,4 @@ h1 {
      animation: none;
    }
  }
+
